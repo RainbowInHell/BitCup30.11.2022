@@ -17,8 +17,9 @@ public class LogInPage extends BasePage {
         return DRVIER.findElement(loginPageLogo).isDisplayed();
     }
 
+    @Override
     public void openWindow(){
-        DRVIER.get(PropertiesReader.getValue("url"));
+        DRVIER.get(PropertiesReader.getValue("loginPageUrl"));
     }
 
     public void fillUserNameField(){

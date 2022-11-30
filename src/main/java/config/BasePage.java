@@ -7,6 +7,7 @@ public abstract class BasePage {
     public final WebDriver DRVIER = WebDriverSingleton.getInstance().getDriver();
 
     public abstract boolean isOpened();
+    public abstract void openWindow();
 
 //    public boolean waitUntil {
 //
